@@ -5,20 +5,12 @@
 
 <tiles-definitions>
  
-    <definition name="defaultTemplate" template="/WEB-INF/tiles/template/template.jsp">
-        <put-attribute name="title"  value="Template"/>
-        <put-attribute name="header" value="/WEB-INF/tiles/template/header.jsp" />
-        <put-attribute name="navigation_bar" value="/WEB-INF/tiles/template/menu.jsp" />
-        <put-attribute name="content" value="/WEB-INF/tiles/template/body.jsp"/>
-        <put-attribute name="footer" value="/WEB-INF/tiles/template/footer.jsp" />
-    </definition>
-    
     <definition name="defaultTemplate2" template="/WEB-INF/tiles/template/tepmlate2.jsp">
         <put-attribute name="title"     value="Template2" />
-        <put-attribute name="header"     value="/WEB-INF/tiles/template/header2.jsp" />
-        <put-attribute name="menu"         value="/WEB-INF/tiles/template/menu2.jsp" />
-        <put-attribute name="body"         value="" />
-        <put-attribute name="footer"     value="/WEB-INF/tiles/template/footer.jsp" />
+        <put-attribute name="header"    value="/WEB-INF/tiles/template/header2.jsp" />
+        <put-attribute name="menu"      value="/WEB-INF/tiles/template/menu2.jsp" />
+        <put-attribute name="body"      value="" />
+        <put-attribute name="footer"    value="/WEB-INF/tiles/template/footer.jsp" />
     </definition>
 
     <definition name="ADDUSERPAGE" extends="defaultTemplate2">
@@ -69,8 +61,7 @@
         <put-attribute name="body" value="/WEB-INF/views/pages/sendMessage.jsp"/>
     </definition>
 
-
-    <definition name="startPage_def" extends="defaultTemplate">
+    <definition name="startPage_def" extends="defaultTemplate2">
 		<put-attribute name="title" value="Syndic" />
     	<put-attribute name="page_description" value="syndic"/>
 		<put-attribute name="navigation_bar" value="" />
